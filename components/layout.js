@@ -32,7 +32,7 @@ export default function Layout({ children, home }) {
               className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
               alt={name}
             />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <h1 className="text-2xl font-bold pb-6 pt-2">{name}</h1>
           </>
         ) : (
           <>
@@ -45,7 +45,7 @@ export default function Layout({ children, home }) {
                 />
               </a>
             </Link>
-            <h2 className={utilStyles.headingLg}>
+            <h2 className="text-2xl font-bold pb-6 pt-2">
               <Link href="/">
                 <a className={utilStyles.colorInherit}>{name}</a>
               </Link>

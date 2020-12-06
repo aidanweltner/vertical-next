@@ -3,6 +3,8 @@ module.exports = {
     // Use *.tsx if using TypeScript
     './pages/**/*.js',
     './components/**/*.js'
-  ]
-  // ...
+  ],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
