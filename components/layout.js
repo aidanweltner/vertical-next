@@ -1,14 +1,12 @@
 import Head from 'next/head'
-import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
 const name = 'Aidan'
-export const siteTitle = 'Next.js Sample Website'
+export const siteTitle = 'Vertical Construction'
 
 export default function Layout({ children, home }) {
   return (
-    <div className={styles.container}>
+    <div className="container mx-auto">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -24,15 +22,15 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className={styles.header}>
+      <header className="max-w-screen-md mx-auto px-4 text-center">
         {home ? (
           <>
             <img
               src="/images/aidan.jpg"
-              className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
+              className="rounded-full mx-auto p-6 h-48"
               alt={name}
             />
-            <h1 className="text-2xl font-bold pb-6 pt-2">{name}</h1>
+            <h1 className="text-2xl text-primary font-bold pb-6 pt-2">{name}</h1>
           </>
         ) : (
           <>
@@ -40,24 +38,24 @@ export default function Layout({ children, home }) {
               <a>
                 <img
                   src="/images/aidan.jpg"
-                  className={`${styles.headerImage} ${utilStyles.borderCircle}`}
+                  className="rounded-full mx-auto p-6 h-48"
                   alt={name}
                 />
               </a>
             </Link>
-            <h2 className="text-2xl font-bold pb-6 pt-2">
+            <h2 className="text-2xl text-primary font-bold pb-6 pt-2">
               <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
+                <a className="text-primary">{name}</a>
               </Link>
             </h2>
           </>
         )}
       </header>
-      <main>{children}</main>
+      <main className="max-w-screen-md mx-auto px-4">{children}</main>
       {!home && (
-        <div className={styles.backToHome}>
+        <div className="max-w-screen-md mx-auto px-4 text-primary font-bold">
           <Link href="/">
-            <a>← Back to home</a>
+            <a className="text-primary">← Back to home</a>
           </Link>
         </div>
       )}
