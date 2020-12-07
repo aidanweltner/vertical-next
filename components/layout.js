@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import LogoHoriz from './logoHoriz'
 
-const name = 'Aidan'
 export const siteTitle = 'Vertical Construction'
 
 export default function Layout({ children, home }) {
@@ -24,31 +24,17 @@ export default function Layout({ children, home }) {
       </Head>
       <header className="max-w-screen-md mx-auto px-4 text-center">
         {home ? (
-          <>
-            <img
-              src="/images/aidan.jpg"
-              className="rounded-full mx-auto p-6 h-48"
-              alt={name}
-            />
-            <h1 className="text-2xl text-primary font-bold pb-6 pt-2">{name}</h1>
-          </>
+          <div className="py-3">
+            <LogoHoriz className="text-primary h-8 mx-auto"></LogoHoriz>
+          </div>
         ) : (
-          <>
+          <div className="py-3">
             <Link href="/">
               <a>
-                <img
-                  src="/images/aidan.jpg"
-                  className="rounded-full mx-auto p-6 h-48"
-                  alt={name}
-                />
+                <LogoHoriz className="text-primary h-8 mx-auto"></LogoHoriz>
               </a>
             </Link>
-            <h2 className="text-2xl text-primary font-bold pb-6 pt-2">
-              <Link href="/">
-                <a className="text-primary">{name}</a>
-              </Link>
-            </h2>
-          </>
+          </div>
         )}
       </header>
       <main className="max-w-screen-md mx-auto px-4">{children}</main>

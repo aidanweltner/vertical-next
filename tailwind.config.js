@@ -20,6 +20,7 @@ module.exports = {
     },
     colors: {
       primary: '#c21001',
+      white: '#fff',
     },
   },
   purge: [
