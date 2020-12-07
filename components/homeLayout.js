@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { siteTitle } from "../components/layout";
+import Footer from "./footer";
 import Header from "./header";
 
 export default function HomeLayout({ children }) {
@@ -22,6 +23,7 @@ export default function HomeLayout({ children }) {
       </Head>
       <Header dark></Header>
       <main className="max-w-screen-md mx-auto px-4">{children}</main>
+      <Footer dark></Footer>
     </div>
   )
 }
