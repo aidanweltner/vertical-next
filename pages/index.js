@@ -1,46 +1,28 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import Layout, { siteTitle } from '../components/layout'
-import Date from '../components/date'
-import utilStyles from '../styles/utils.module.css'
+import Head from "next/head";
+import HomeLayout from "../components/homeLayout";
+import HomeSection from "../components/homeSection";
+import { siteTitle } from "../components/layout";
 
-import { getSortedPostsData } from '../lib/posts'
-
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData()
-  return {
-    props: {
-      allPostsData
-    }
-  }
-}
-
-export default function Home({ allPostsData }) {
+export default function Home() {
   return (
-    <Layout home>
+    <HomeLayout>
       <Head>
-        <title>{siteTitle}</title>
+        <title>{ siteTitle }</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>I am Aidan Weltner. A designer and developer living in Bozeman, MT.</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
-      </section>
-      <section className="mt-4">
-        <h2 className="text-2xl font-bold">Blog</h2>
-        <ul className="my-4">
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
-                <a className="text-lg font-bold text-gray-800 underline">{title}</a>
-              </Link>
-              <p className="text-sm text-gray-600"><Date dateString={date}></Date></p>
-            </li>
-          ))}
-        </ul>
-      </section>
-    </Layout>
+      <HomeSection
+        title="Portfolio"
+        href="/"
+        top="30+ years of experience of construction management experience makes VERTICAL"
+        heading="The first step in your building journey"
+        bg="bardenay-boise-vertical-construction.jpg"
+      />
+      <HomeSection
+        title="Contact"
+        href="/"
+        top="Our unique process ensures that your project moves smoothly"
+        heading="From the drawing board to reality"
+        bg="Eagle-River-Vertical-Construction.jpg"
+      />
+    </HomeLayout>
   )
 }

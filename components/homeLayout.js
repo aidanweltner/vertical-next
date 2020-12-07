@@ -22,7 +22,7 @@ export default function HomeLayout({ children }) {
           {/* <meta name="twitter:card" content="summary_large_image" /> */}
       </Head>
       <Header dark></Header>
-      <main className="max-w-screen-md mx-auto px-4">{children}</main>
+      <main>{children}</main>
       <Footer dark></Footer>
     </div>
   )

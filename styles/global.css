@@ -29,3 +29,16 @@ img {
   max-width: 100%;
   display: block;
 }
+
+#filter-img {
+  -webkit-transition: 1s -webkit-filter ease-in;
+  -moz-transition: 1s -moz-filter ease-in;
+  -moz-transition: 1s filter ease-in;
+  -ms-transition: 1s -ms-filter ease-in;
+  -o-transition: 1s -o-filter ease-in;
+  transition: 1s filter ease-in, 1s -webkit-filter ease-in;
+}
+
+.red-filter {
+  filter: url("#red-flat");
+}
