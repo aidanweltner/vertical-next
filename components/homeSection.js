@@ -4,7 +4,7 @@ export default function HomeSection({ href, title, top, heading, bg }) {
   return (
     <>
       <section className="w-screen block relative h-screen xl:h-85 -mb-1 bg-cover">
-        <div className="absolute inset-0 max-w-screen-sm xl:max-w-screen-md px-4 lg:px-12 mx-auto z-10 h-full flex flex-col content-between py-1/4 py-20 sm:py-32">
+        <div className="absolute inset-0 section-inner z-10 h-full flex flex-col content-between">
           <p className="text-xs lg:text-normal text-white text-center md:text-left">{top}</p>
           <h1 className="text-5xl lg:text-6xl font-bold text-white my-auto text-center md:text-left">{heading}</h1>
           <button className="lg:bg-primary hover:bg-red-600 focus:bg-red-600 shadow-md hover:shadow-lg p-2 my-4 lg:my-0 lg:p-6 lg:text-xl font-semibold text-sm uppercase tracking-wide">

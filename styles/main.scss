@@ -13,7 +13,15 @@ body {
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
-  @apply bg-gray-900;
+  @apply bg-gray-900 text-gray-300;
+}
+
+.section-inner {
+  @apply max-w-screen-sm xl:max-w-screen-md px-4 lg:px-12 mx-auto py-24 sm:py-32;
+
+  .p-light {
+    @apply py-8 lg:py-24;
+  }
 }
 
 * {
@@ -21,11 +29,14 @@ body {
 }
 
 a {
-  text-decoration: none;
-}
+  @apply text-gray-200 border-red-600 border-b no-underline;
 
-a:hover {
-  text-decoration: underline;
+  transition: 0.3s ease;
+  
+  &:hover,
+  &:focus {
+    @apply text-red-600 no-underline border-b-0;
+  }
 }
 
 img {
