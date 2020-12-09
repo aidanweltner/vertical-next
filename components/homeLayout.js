@@ -5,7 +5,7 @@ import Header from "./header";
 
 export default function HomeLayout({ children }) {
   return (
-    <div className="bg-red-900">
+    <>
       <Head>
         <link rel="icon" href="/favicon.ico" />
           <meta
@@ -24,6 +24,6 @@ export default function HomeLayout({ children }) {
       <Header dark></Header>
       <main>{children}</main>
       <Footer dark></Footer>
-    </div>
+    </>
   )
 }
