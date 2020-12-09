@@ -1,4 +1,4 @@
-import styles from './Burger.module.scss'
+import styles from './burger.module.scss'
 
 export default function Burger({ open }) {
   const isExpanded = open;
