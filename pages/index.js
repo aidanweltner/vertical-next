@@ -25,10 +25,51 @@ export default function Home() {
         bg="Eagle-River-Vertical-Construction.jpg"
       />
       <TextSection>
-        <p>Bacon ipsum dolor amet hamburger tri-tip ribeye, nulla sausage occaecat frankfurter cillum shank minim tenderloin pork short loin incididunt ex. Pancetta ham aute, alcatra fatback sed eiusmod. Ut ball tip swine qui buffalo. Non veniam aute laboris in, deserunt ground round boudin ad esse adipisicing. Tempor mollit ut, cillum in nostrud culpa biltong irure flank adipisicing burgdoggen pork belly strip steak bresaola.</p>
-        <p>Leberkas short ribs flank, <a href="#">ipsum sint ground</a> round ullamco cupim eiusmod anim fatback. Commodo qui dolor in kevin ad non salami alcatra sunt. Pig buffalo prosciutto aute tempor bresaola. Salami chuck bacon, kevin shoulder deserunt esse turducken velit nostrud landjaeger andouille non excepteur tenderloin.</p>
-        <p>Irure tempor in, kevin sed mollit enim. Shank id nisi, spare ribs <strong>eu ground round</strong> alcatra bacon sed tenderloin irure picanha. Dolor dolore magna, beef drumstick proident flank bacon velit shoulder spare ribs ullamco strip steak anim. Officia bresaola ball tip meatball ullamco.</p>
-        <p>Dolor qui quis ipsum, <em>proident aliquip sed</em> ball tip tri-tip corned beef porchetta officia chicken fatback swine. Proident leberkas pariatur consequat turducken kevin prosciutto consectetur short ribs pork loin. Tempor culpa shank, spare ribs magna ex strip steak sausage brisket deserunt aute nulla. Sint cupidatat tenderloin, spare ribs strip steak nisi incididunt fugiat dolore shank ribeye turkey aliquip.</p>
+        <h1>HTML Ipsum Presents</h1>
+        <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+        <h2>Header Level 2</h2>
+        <ol>
+          <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+          <li>Aliquam tincidunt mauris eu risus.</li>
+        </ol>
+        <blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote>
+        <hr/>
+        <h3>Header Level 3</h3>
+        <ul>
+          <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+          <li>Aliquam tincidunt mauris eu risus.</li>
+        </ul>
+        <pre><code>{"\n"}{"        "}#header h1 a {"{"}{"\n"}{"          "}display: block;{"\n"}{"          "}width: 300px;{"\n"}{"          "}height: 80px;{"\n"}{"        "}{"}"}{"\n"}{"        "}</code></pre>
+        <table>
+          <thead>
+            <tr>
+              <th>Sample</th>
+              <th>Sample</th>
+              <th>Sample</th>
+              <th>Sample</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sample</td>
+              <td>Sample</td>
+              <td>Sample</td>
+              <td>Sample</td>
+            </tr>
+            <tr>
+              <td>Sample</td>
+              <td>Sample</td>
+              <td>Sample</td>
+              <td>Sample</td>
+            </tr>
+            <tr>
+              <td>Sample</td>
+              <td>Sample</td>
+              <td>Sample</td>
+              <td>Sample</td>
+            </tr>
+          </tbody>
+        </table>
       </TextSection>
     </HomeLayout>
   )

@@ -7,6 +7,24 @@ module.exports = {
         DEFAULT: {
           css: {
             color: colors.warmGray[300],
+            h1: {
+              color: colors.warmGray[200],
+            },
+            h2: {
+              color: colors.warmGray[200],
+            },
+            h3: {
+              color: colors.warmGray[200],
+            },
+            h4: {
+              color: colors.warmGray[200],
+            },
+            h5: {
+              color: colors.warmGray[200],
+            },
+            h6: {
+              color: colors.warmGray[200],
+            },
             strong: {
               color: colors.warmGray[200],
             },
@@ -26,7 +44,35 @@ module.exports = {
                 textDecoration: 'none',
                 borderBottomWidth: '0',
               }
-            }
+            },
+            'ol li': {
+              color: colors.warmGray[300],
+              '&:before': {
+                color: colors.warmGray[500],
+              },
+            },
+            'ul li': {
+              color: colors.warmGray[300],
+              '&:before': {
+                color: colors.warmGray[500],
+              },
+            },
+            hr: {
+              borderColor: colors.warmGray[700],
+            },
+            thead: {
+              color: colors.warmGray[200],
+            },
+            pre: {
+              backgroundColor: colors.warmGray[800],
+            },
+            code: {
+              color: colors.warmGray[200],
+            },
+            blockquote: {
+              color: colors.warmGray[300],
+              borderLeftColor: colors.warmGray[700],
+            },
           },
         },
       },
