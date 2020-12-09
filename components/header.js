@@ -1,4 +1,4 @@
-import Burger from "./Burger/Burger";
+import Burger from "./burger/burger";
 import LogoHoriz from "./logoHoriz";
 import LogoVert from "./logoVert";
 import MenuItem from "./menuItem";
