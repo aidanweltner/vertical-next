@@ -26,6 +26,7 @@ module.exports = {
               color: colors.warmGray[200],
             },
             strong: {
+              fontWeight: '700',
               color: colors.warmGray[200],
             },
             a: {
