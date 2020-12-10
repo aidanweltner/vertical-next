@@ -87,6 +87,11 @@ module.exports = {
       },
     },
   },
+  variants: {
+    extend: {
+      scale: ['group-hover', 'group-focus'],
+    },
+  },
   purge: [
     // Use *.tsx if using TypeScript
     './pages/**/*.js',

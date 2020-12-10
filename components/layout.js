@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import LogoHoriz from './logoHoriz'
+import Header from './header'
+import Footer from './footer'
 
 export const siteTitle = 'Vertical Construction'
 
@@ -22,29 +23,16 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className="max-w-screen-md mx-auto px-4 text-center">
-        {home ? (
-          <div className="py-3">
-            <LogoHoriz className="text-primary h-8 mx-auto"></LogoHoriz>
-          </div>
-        ) : (
-          <div className="py-3">
-            <Link href="/">
-              <a>
-                <LogoHoriz className="text-primary h-8 mx-auto"></LogoHoriz>
-              </a>
-            </Link>
-          </div>
-        )}
-      </header>
+      <Header dark/>
       <main className="max-w-screen-md mx-auto px-4">{children}</main>
       {!home && (
-        <div className="max-w-screen-md mx-auto px-4 text-primary font-bold">
+        <div className="section-inner font-bold">
           <Link href="/">
-            <a className="text-primary">← Back to home</a>
+            <a className="text-white">← Back to home</a>
           </Link>
         </div>
       )}
+      <Footer dark></Footer>
     </div>
   )
 }
