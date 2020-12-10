@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Burger from "./burger/burger";
 import LogoHoriz from "./logoHoriz";
 import LogoVert from "./logoVert";
@@ -21,7 +22,11 @@ export default function Header({ dark }) {
             <MenuItem dark={dark} href="/" title="Contact"/>
           </ul>
         </nav>
-        <LogoVert className={`w-8 hidden lg:block ${dark ? 'text-white' : 'text-primary'}`}></LogoVert>
+        <Link href="/">
+          <a className="border-none">
+            <LogoVert className={`w-8 hidden lg:block ${dark ? 'text-white' : 'text-primary'}`}/>
+          </a>
+        </Link>
       </div>
     </header>
   )

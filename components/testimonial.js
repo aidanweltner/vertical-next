@@ -10,7 +10,7 @@ export default function Testimonial({ quote, source, sourcePosition, project, pr
       <Link href={project}>
         <a className="flex items-center mb-8 lg:mb-14 border-none mt-3 space-x-4 group">
           <div className="h-14 w-14">
-            <img className="object-fit h-14 transform transition-transform ease-in-out duration-500 scale-100 group-hover:scale-125 group-focus:scale-125" src={projectImage} />
+            <img className="object-cover h-14 transform transition-transform ease-in-out duration-500 scale-100 group-hover:scale-125 group-focus:scale-125" src={projectImage} />
           </div>
           <div>
             <p className="text-lg lg:text-xl font-bold">{projectTitle}</p>
