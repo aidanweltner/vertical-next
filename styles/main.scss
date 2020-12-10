@@ -39,6 +39,16 @@ a {
   }
 }
 
+.details-list {
+  li {
+    @apply pl-2;
+
+    &:first-child {
+      @apply pl-0;
+    }
+  }
+}
+
 img {
   max-width: 100%;
   display: block;

@@ -17,7 +17,7 @@ export default function Header({ dark }) {
           <ul className="nav sm:flex sm:flex-col mb-16">
             <MenuItem dark={dark} href="/" title="Portfolio"/>
             <MenuItem dark={dark} href="/testimonials" title="Testimonials"/>
-            <MenuItem dark={dark} href="/" title="About"/>
+            <MenuItem dark={dark} href="/about" title="About"/>
             <MenuItem dark={dark} href="/" title="Contact"/>
           </ul>
         </nav>

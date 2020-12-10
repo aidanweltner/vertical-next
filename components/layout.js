@@ -7,7 +7,7 @@ export const siteTitle = 'Vertical Construction'
 
 export default function Layout({ children, home }) {
   return (
-    <div className="container mx-auto">
+    <>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -24,7 +24,7 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <Header dark/>
-      <main className="max-w-screen-md mx-auto px-4">{children}</main>
+      <main>{children}</main>
       {!home && (
         <div className="section-inner font-bold">
           <Link href="/">
@@ -33,6 +33,6 @@ export default function Layout({ children, home }) {
         </div>
       )}
       <Footer dark></Footer>
-    </div>
+    </>
   )
 }
