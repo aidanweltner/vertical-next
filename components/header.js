@@ -19,7 +19,7 @@ export default function Header({ dark }) {
             <MenuItem dark={dark} href="/" title="Portfolio"/>
             <MenuItem dark={dark} href="/testimonials" title="Testimonials"/>
             <MenuItem dark={dark} href="/about" title="About"/>
-            <MenuItem dark={dark} href="/" title="Contact"/>
+            <MenuItem dark={dark} href="/contact" title="Contact"/>
           </ul>
         </nav>
         <Link href="/">

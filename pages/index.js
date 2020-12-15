@@ -19,7 +19,7 @@ export default function Home() {
       />
       <HomeSection
         title="Contact"
-        href="/"
+        href="/contact"
         top="Our unique process ensures that your project moves smoothly"
         heading="From the drawing board to reality"
         bg="Eagle-River-Vertical-Construction.jpg"
