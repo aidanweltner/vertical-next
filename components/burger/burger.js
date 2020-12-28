@@ -1,19 +1,11 @@
 import styles from './burger.module.scss'
 
-export default function Burger({ open }) {
-  const isExpanded = open;
-
+export default function Burger(/* { isOpen } */) {
   return (
-    <>
-      <button
-        className={styles.burger}
-        aria-label="Menu Toggle"
-        aria-expanded={isExpanded}
-      >
-        <span/>
-        <span/>
-        <span/>
-      </button>
-    </>
+    <div className={styles.burger/* , isOpen ? 'open' : ''  */} >
+      <span/>
+      <span/>
+      <span/>
+    </div>
   )
 }
