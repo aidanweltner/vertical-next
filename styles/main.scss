@@ -38,6 +38,9 @@ a {
 @tailwind components;
 @tailwind utilities;
 
+/* Splide Styles */
+@import '@splidejs/splide/dist/css/splide.min.css';
+
 /* Global styles */
 .details-list {
   li {
