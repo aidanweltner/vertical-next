@@ -52,6 +52,29 @@ a {
   }
 }
 
+.tile {
+  @apply border-none border-primary transition-all ease-out duration-300;
+
+  .header {
+    background: rgb(194,16,1);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 65%, rgba(194,16,1,1) 65%);
+  }
+
+  &:hover,
+  &:focus {
+    @apply border-4;
+
+    .header {
+      background: rgb(194,16,1);
+      background: linear-gradient(180deg, rgba(255,255,255,0) 45%, rgba(194,16,1,1) 45%);
+    }
+
+    .red-filter {
+      filter: none;
+    }
+  }
+}
+
 img {
   max-width: 100%;
   display: block;
