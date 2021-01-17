@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
       <HomeSection
         title="Portfolio"
-        href="/"
+        href="/portfolio"
         top="30+ years of experience of construction management experience makes VERTICAL"
         heading="The first step in your building journey"
         bg="bardenay-boise-vertical-construction.jpg"
