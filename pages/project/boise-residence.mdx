@@ -1,0 +1,15 @@
+import Project from '../../components/project'
+import Testimonial from '../../components/testimonial'
+
+export const meta = {
+  title: 'Boise Residence',
+  image: '/images/projects/boise-residence/BoiseFoothillsResidence.jpg',
+  description: "A patio with a view of the entire valley",
+  details: [
+    "Boise, ID",
+    "Ground up, Custom home",
+  ],
+  isFeatured: false,
+}
+
+export default ({children}) => <Project meta={meta}>{children}</Project>

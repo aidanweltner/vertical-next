@@ -1,0 +1,15 @@
+import Project from '../../components/project'
+import Testimonial from '../../components/testimonial'
+
+export const meta = {
+  title: 'Big Creek Lodge',
+  image: '/images/projects/big-creek/BigCreekAviationLodgeIdaho.jpg',
+  description: "Rebuilding an Idaho backcountry lodge from ashes",
+  details: [
+    "Big Creek, ID",
+    "Ground up",
+  ],
+  isFeatured: false,
+}
+
+export default ({children}) => <Project meta={meta}>{children}</Project>

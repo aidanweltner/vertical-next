@@ -1,0 +1,15 @@
+import Project from '../../components/project'
+import Testimonial from '../../components/testimonial'
+
+export const meta = {
+  title: 'Bittercreek',
+  image: '/images/projects/bittercreek/BitterCreekAlehouseDowntownBoise.jpg',
+  description: "One of downtown Boise's most iconic patios",
+  details: [
+    "Boise, ID",
+    "Tenant Improvement",
+  ],
+  isFeatured: true,
+}
+
+export default ({children}) => <Project meta={meta}>{children}</Project>
