@@ -86,6 +86,9 @@ module.exports = {
       backgroundColor: {
         none: 'none',
       },
+      screens: {
+        '3xl': '2100px',
+      }
     },
   },
   variants: {

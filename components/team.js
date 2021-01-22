@@ -1,7 +1,7 @@
 export default function Team({ teamHeading, team}){
   return (
     <section>
-      <div className="section-inner">
+      <div className="section-inner max-w-screen-md">
         <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">{teamHeading}</h2>
         <div className="grid md:grid-cols-2 gap-6 lg:gap-y-8">
           {team.map((member)=>(

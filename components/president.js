@@ -1,7 +1,7 @@
 export default function President({ title, subTitle, subTitle2, image, quote, source, sourcePosition, children, favoritesTitle, favorites}) {
   return (
     <section>
-      <div className="section-inner py-12">
+      <div className="section-inner max-w-screen-md py-12">
         <div className="flex flex-col md:flex-row-reverse mb-8 justify-between">
           <div className="w-full h-48 md:w-48">
             <img className="object-cover h-48 w-full pb-2 md:pb-0" src={image} />

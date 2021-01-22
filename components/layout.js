@@ -23,16 +23,20 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <Header dark/>
-      <main>{children}</main>
-      {!home && (
-        <div className="section-inner font-bold">
-          <Link href="/">
-            <a className="text-white">← Back to home</a>
-          </Link>
-        </div>
-      )}
-      <Footer dark></Footer>
+      
+      <main>
+        <Header dark/>
+        {children}
+        {!home && (
+          <div className="section-inner font-bold">
+            <Link href="/">
+              <a className="text-white">← Back to home</a>
+            </Link>
+          </div>
+        )}
+        <Footer dark></Footer>
+      </main>
+      
     </>
   )
 }
