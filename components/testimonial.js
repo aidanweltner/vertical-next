@@ -3,8 +3,8 @@ import Link from "next/link";
 export default function Testimonial({ quote, source, sourcePosition, project, projectTitle, projectImage, classes }) {
   return (
     <div className={classes ? classes : '' }>
-      <p className="text-xl lg:text-2xl font-bold mt-6 mb-2 text-gray-200">"{quote}"</p>
-      <p className="text-lg lg:text-xl font-bold my-0 text-gray-300">{source}</p>
+      <p className="text-xl lg:text-2xl font-light mt-6 mb-2 text-gray-200">"{quote}"</p>
+      <p className="text-lg lg:text-xl font-bold my-0 text-gray-100">{source}</p>
       {sourcePosition ? <p className="text-md lg:text-lg font-light my-0 text-gray-400">{sourcePosition}</p> : ''}
 
       {project ?
