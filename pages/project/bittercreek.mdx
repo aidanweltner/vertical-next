@@ -1,5 +1,6 @@
 import Project from '../../components/project'
 import Testimonial from '../../components/testimonial'
+import Slider from '../../components/slider'
 
 export const meta = {
   title: 'Bittercreek',
@@ -12,4 +13,20 @@ export const meta = {
   isFeatured: false,
 }
 
+export const slides = [
+  {
+    src: '/images/projects/bittercreek/BitterCreekAlehouseDowntownBoisePatio.jpg',
+    alt: "Bittercreek Downtown Boise, ID patio area"
+  },
+  {
+    src: '/images/projects/bittercreek/BitterCreekAlehouseDowntownBoise.jpg',
+    alt: "Bittercreek Downtown Boise, ID"
+  },
+]
+
+
 export default ({children}) => <Project meta={meta}>{children}</Project>
+
+VERTICAL has completed multiple tenant improvements for this venerable pub and eatery in downtown Boise.
+
+<Slider slides={slides}/>

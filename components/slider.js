@@ -45,6 +45,7 @@ export default function({slides}) {
 
   return (
     <>
+      <div id="slider"></div>
       <Slider {...settings}>
         {slides.map((slide)=>(
           <div className={`relative ${largeSlider ? 'h-80screen' : 'h-96'} border-2 border-gray-900`}>
@@ -53,10 +54,12 @@ export default function({slides}) {
         ))}
       </Slider>
       <button className="mt-2 underline flex mx-auto items-center" onClick={() => toggle(!largeSlider)}>
-        {largeSlider ? 
-          <span>Reduce slideshow</span> : 
-          <span>Expand slideshow</span>
-        }
+        <a href="#slider" className="no-underline border-none">
+          {largeSlider ? 
+            <span>Reduce slideshow</span> : 
+            <span>Expand slideshow</span>
+          }
+        </a>
         <svg className="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
         </svg>

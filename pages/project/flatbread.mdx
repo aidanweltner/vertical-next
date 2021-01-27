@@ -1,5 +1,6 @@
 import Project from '../../components/project'
 import Testimonial from '../../components/testimonial'
+import Slider from '../../components/slider'
 
 export const meta = {
   title: 'Flatbread',
@@ -12,6 +13,19 @@ export const meta = {
   isFeatured: false,
 }
 
+export const slides = [
+  {
+    src: '/images/projects/flatbread/FlatbreadPizzaOvenDowntownBoiseExterior.jpg',
+    alt: "Flatbread Pizza Oven Exterior Downtown Boise, ID"
+  },
+  {
+    src: '/images/projects/flatbread/FlatbreadPizzaOvenDowntownBoiseInterior.jpg',
+    alt: "Flatbread Pizza Oven Exterior Downtown Boise, ID"
+  },
+]
+
 export default ({children}) => <Project meta={meta}>{children}</Project>
 
-public/images/projects/flatbread/FlatbreadPizzaOvenDowntownBoiseInterior.jpg
+VERTICAL helped Flatbread Neapolitan Pizzeria fire up their downtown Boise restaurant located in the Zion’s Bank Building.  With an 800-degree oven and plenty of custom finishes, Flatbread has a comfortable urban/industrial vibe.
+
+<Slider slides={slides}/>

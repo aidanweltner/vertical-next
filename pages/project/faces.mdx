@@ -1,5 +1,6 @@
 import Project from '../../components/project'
 import Testimonial from '../../components/testimonial'
+import Slider from '../../components/slider'
 
 export const meta = {
   title: 'Faces',
@@ -12,6 +13,23 @@ export const meta = {
   isFeatured: false,
 }
 
+export const slides = [
+  {
+    src: '/images/projects/faces/FacesInteriorDowntownBoise.jpg',
+    alt: "FACES of Hope Victim Center Interior Downtown Boise, ID"
+  },
+  {
+    src: '/images/projects/faces/FacesJusticeCenterDowntownBoise.jpg',
+    alt: "FACES of Hope Victim Center Downtown Boise, ID"
+  },
+  {
+    src: '/images/projects/faces/FacesExteriorDowntownBoise.jpg',
+    alt: "FACES of Hope Victim Center Exterior Downtown Boise, ID"
+  }
+]
+
 export default ({children}) => <Project meta={meta}>{children}</Project>
 
 VERTICAL Corporation constructed the FACES of Hope Victim Center located in the old John Deere store at 6th and Grove in downtown Boise.   FACES provides one-stop services for victims of domestic violence and child abuse. The project included remodeling, tenant improvements and site work.
+
+<Slider slides={slides}/>

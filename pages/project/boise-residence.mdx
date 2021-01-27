@@ -1,5 +1,6 @@
 import Project from '../../components/project'
 import Testimonial from '../../components/testimonial'
+import Slider from '../../components/slider'
 
 export const meta = {
   title: 'Boise Residence',
@@ -12,4 +13,23 @@ export const meta = {
   isFeatured: false,
 }
 
+export const slides = [
+  {
+    src: '/images/projects/boise-residence/BoiseFoothillsResidencePatio.jpg',
+    alt: "Boise, ID residence patio back area"
+  },
+  {
+    src: '/images/projects/boise-residence/BoiseFoothillsResidenceBackyard.jpg',
+    alt: "Boise, ID residence backyard area"
+  },
+  {
+    src: '/images/projects/boise-residence/BoiseFoothillsResidence.jpg',
+    alt: "Boise, ID residence front yard and entrance"
+  }
+]
+
 export default ({children}) => <Project meta={meta}>{children}</Project>
+
+VERTICAL completed the reconstruction of this 1961 Boise home in 2006. The 3,500 square foot home features an infinity edge swimming pool, dumb-waiter, custom finishes such as granite and glass tile, and commercial touches such as commercial-grade doors and hardware, flooring and steel I-beam construction.
+
+<Slider slides={slides}/>

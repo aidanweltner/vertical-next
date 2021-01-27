@@ -1,5 +1,6 @@
 import Project from '../../components/project'
 import Testimonial from '../../components/testimonial'
+import Slider from '../../components/slider'
 
 export const meta = {
   title: 'Perison Law Offices',
@@ -13,6 +14,23 @@ export const meta = {
   isFeatured: false,
 }
 
+export const slides = [
+  {
+    src: '/images/projects/perison-law-offices/PerisonLawOfficesFrontDeskBoise.jpg',
+    alt: "Perison Law front desk Downtown Boise, ID"
+  },
+  {
+    src: '/images/projects/perison-law-offices/PerisonLawOfficesBoise.jpg',
+    alt: "Perison Law office Downtown Boise, ID"
+  },
+  {
+    src: '/images/projects/perison-law-offices/PerisonLawOfficesLobbyBoise.jpg',
+    alt: "Perison Law lobby Downtown Boise, ID"
+  }
+]
+
 export default ({children}) => <Project meta={meta}>{children}</Project>
 
 VERTICAL completed the tenant improvement of the Mark D. Perison law offices melding a modern space with existing form and architecture.  The contemporary space is located in the historic Foster Building in Boise’s popular BoDo District.
+
+<Slider slides={slides}/>

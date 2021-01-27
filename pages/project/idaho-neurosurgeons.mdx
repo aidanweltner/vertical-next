@@ -1,5 +1,6 @@
 import Project from '../../components/project'
 import Testimonial from '../../components/testimonial'
+import Slider from '../../components/slider'
 
 export const meta = {
   title: 'Idaho Neurosurgeons',
@@ -13,6 +14,23 @@ export const meta = {
   isFeatured: false,
 }
 
+export const slides = [
+  {
+    src: '/images/projects/idaho-neurosurgeons/Idaho_NeuroSurgical_PatientRoom_StAlphonsus.jpg',
+    alt: "Idaho Neurosurgical Office St Alphansus Patient Room Boise, ID"
+  },
+  {
+    src: '/images/projects/idaho-neurosurgeons/Idaho_NeuroSurgical_DrsDesks_StAlphonsus.jpg',
+    alt: "Idaho Neurosurgical Office St Alphansus Dr's Desks Room Boise, ID"
+  },
+  {
+    src: '/images/projects/idaho-neurosurgeons/Idaho_NeuroSurgical_Lobby_StAlphonsus.jpg',
+    alt: "Idaho Neurosurgical Office St Alphansus Lobby Boise, ID"
+  },
+]
+
 export default ({children}) => <Project meta={meta}>{children}</Project>
 
 This $1.3 million tenant improvement project involved a relocation of the clinic to the entire 4th floor of St. Alphonsus Medical office building No. 6. The project included the renovation of the lobby, exam rooms and doctor’s offices.
+
+<Slider slides={slides}/>

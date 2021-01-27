@@ -15,7 +15,7 @@ export default function Home() {
         href="/portfolio"
         top="30+ years of experience of construction management experience makes VERTICAL"
         heading="The first step in your building journey"
-        bg="bardenay-boise-vertical-construction.jpg"
+        bg="projects/bardenay/bardenay-boise-vertical-construction.jpg"
       />
       <HomeSection
         title="Contact"

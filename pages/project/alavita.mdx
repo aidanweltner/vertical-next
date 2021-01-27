@@ -1,5 +1,6 @@
 import Project from '../../components/project'
 import Testimonial from '../../components/testimonial'
+import Slider from '../../components/slider'
 
 export const meta = {
   title: 'Alavita',
@@ -12,11 +13,23 @@ export const meta = {
   isFeatured: false,
 }
 
+export const slides = [
+  {
+    src: '/images/projects/alavita/Alavita-Pano-©Steve-Smith-2013.jpg',
+    alt: "Alavita Downtown Boise, ID Interior Bar Area"
+  },
+  {
+    src: '/images/projects/alavita/AlavitaDowntownBoise.jpg',
+    alt: "Alavita Downtown Boise, ID"
+  },
+  {
+    src: '/images/projects/alavita/AlavitaInteriorDowntownBoise.jpg',
+    alt: "Alavita Downtown Boise, ID Restaurant Interior"
+  }
+]
+
 export default ({children}) => <Project meta={meta}>{children}</Project>
 
 VERTICAL brought an old t-shirt shop back “to life” for Alavita, a popular restaurant in downtown Boise.
 
-![Alavita Restaurant Downtown Boise, ID](/images/projects/alavita/AlavitaDowntownBoise.jpg)
-
-![Alavita Restaurant Downtown Boise, ID Interior](/images/projects/alavita/AlavitaInteriorDowntownBoise.jpg)
-
+<Slider slides={slides} />

@@ -1,5 +1,6 @@
 import Project from '../../components/project'
 import Testimonial from '../../components/testimonial'
+import Slider from '../../components/slider'
 
 export const meta = {
   title: 'Simplot Home',
@@ -12,4 +13,41 @@ export const meta = {
   isFeatured: false,
 }
 
+export const slides = [
+  {
+    src: '/images/projects/simplot-home/SimplotHomeBoiseBenchBackyardPool.jpg',
+    alt: "Simplot private bench bench residence backyard pool Boise, ID"
+  },
+  {
+    src: '/images/projects/simplot-home/SimplotHomeBoiseBenchDiningAreaInterior.jpg',
+    alt: "Simplot private bench residence dining area Boise, ID"
+  },
+  {
+    src: '/images/projects/simplot-home/SimplotHomeBoiseBenchEntrywayInterior.jpg',
+    alt: "Simplot private bench residence enteryway interior Boise, ID"
+  },
+  {
+    src: '/images/projects/simplot-home/SimplotHomeBoiseBenchKitchen.jpg',
+    alt: "Simplot private bench residence kitchen Boise, ID"
+  },
+  {
+    src: '/images/projects/simplot-home/SimplotHomeBoiseBenchLivingRoomInterior.jpg',
+    alt: "Simplot private bench residence living room interior Boise, ID"
+  },
+  {
+    src: '/images/projects/simplot-home/SimplotHomeBoiseBenchStairwell.jpg',
+    alt: "Simplot private bench residence stairwell Boise, ID"
+  },
+  {
+    src: '/images/projects/simplot-home/SimplotHomeBoiseBenchFrontExterior.jpg',
+    alt: "Simplot private bench front exterior residence Boise, ID"
+  },
+  {
+    src: '/images/projects/simplot-home/SimplotHomeBoiseBench.jpg',
+    alt: "Simplot private bench residence Boise, ID"
+  },
+]
+
 export default ({children}) => <Project meta={meta}>{children}</Project>
+
+<Slider slides={slides}/>

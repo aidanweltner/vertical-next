@@ -1,5 +1,6 @@
 import Project from '../../components/project'
 import Testimonial from '../../components/testimonial'
+import Slider from '../../components/slider'
 
 export const meta = {
   title: 'Eberlestock',
@@ -12,6 +13,23 @@ export const meta = {
   isFeatured: false,
 }
 
+export const slides = [
+  {
+    src: '/images/projects/eberlestock/EberlestockWarehouseInProgress.jpg',
+    alt: "Eberlestock warehouse Boise, ID building in progress"
+  },
+  {
+    src: '/images/projects/eberlestock/EberlestockWarehouseExterior.jpg',
+    alt: "Eberlestock warehouse Boise, ID exterior"
+  },
+  {
+    src: '/images/projects/eberlestock/EberlestockWarehouseExteriorStreet.jpg',
+    alt: "Eberlestock warehouse Boise, ID as seen from Main St."
+  }
+]
+
 export default ({children}) => <Project meta={meta}>{children}</Project>
 
 Eberlestock was a complete rebuild after a fire destroyed the original building. Features include rusted metal panels, exposed bow trusses and a modified freight elevator.
+
+<Slider slides={slides}/>
