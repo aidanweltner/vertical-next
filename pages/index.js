@@ -1,3 +1,4 @@
+import HomeHeader from "@components/homeHeader";
 import Head from "next/head";
 import HomeLayout from "../components/homeLayout";
 import HomeSection from "../components/homeSection";
@@ -13,63 +14,31 @@ export default function Home() {
       <HomeSection
         title="Portfolio"
         href="/portfolio"
-        top="30+ years of experience of construction management experience makes VERTICAL"
-        heading="The first step in your building journey"
+        top="At VERTICAL, we specialize in..."
         bg="projects/bardenay/bardenay-boise-vertical-construction.jpg"
-      />
+      >
+        <HomeHeader>Office remodels</HomeHeader>
+        <HomeHeader>Construction management</HomeHeader>
+        <HomeHeader>Design-Build</HomeHeader>
+        <HomeHeader>Repeat Clients</HomeHeader>
+      </HomeSection>
       <HomeSection
         title="Contact"
         href="/contact"
-        top="Our unique process ensures that your project moves smoothly"
-        heading="From the drawing board to reality"
+        top="We believe in..."
         bg="Eagle-River-Vertical-Construction.jpg"
-      />
+      >
+        <HomeHeader>Forging relationships</HomeHeader>
+        <HomeHeader>Safety</HomeHeader>
+        <HomeHeader>Delivering your project on time</HomeHeader>
+        <HomeHeader>Balancing cost with quality and function</HomeHeader>
+        <HomeHeader>Facilitating open and honest communication</HomeHeader>
+        <HomeHeader>Exceeding expectations</HomeHeader>
+      </HomeSection>
       <TextSection>
-        <h1>HTML Ipsum Presents</h1>
-        <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
-        <h2>Header Level 2</h2>
-        <ol>
-          <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-          <li>Aliquam tincidunt mauris eu risus.</li>
-        </ol>
-        <blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote>
-        <hr/>
-        <h3>Header Level 3</h3>
-        <ul>
-          <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-          <li>Aliquam tincidunt mauris eu risus.</li>
-        </ul>
-        <pre><code>{"\n"}{"        "}#header h1 a {"{"}{"\n"}{"          "}display: block;{"\n"}{"          "}width: 300px;{"\n"}{"          "}height: 80px;{"\n"}{"        "}{"}"}{"\n"}{"        "}</code></pre>
-        <table>
-          <thead>
-            <tr>
-              <th>Sample</th>
-              <th>Sample</th>
-              <th>Sample</th>
-              <th>Sample</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Sample</td>
-              <td>Sample</td>
-              <td>Sample</td>
-              <td>Sample</td>
-            </tr>
-            <tr>
-              <td>Sample</td>
-              <td>Sample</td>
-              <td>Sample</td>
-              <td>Sample</td>
-            </tr>
-            <tr>
-              <td>Sample</td>
-              <td>Sample</td>
-              <td>Sample</td>
-              <td>Sample</td>
-            </tr>
-          </tbody>
-        </table>
+        <p>Since 2002, VERTICAL has completed hundreds of projects in Idaho and beyond. Our portfolio features projects that range from simple tenant improvements to complex remodels and  ground-up construction.  We are particularly proud of the projects we have constructed for repeat clients.  These relationships are forged through mutual respect and trust and are a testament to the value we offer our building partners.  With VERTICAL as your building partner, the challenge of balancing cost, quality and time is considered and calculated long before the dirt and nails fly.</p>
+        <p>We are honored to have played a part in building the dreams of business and homeowners throughout the region.</p>
+
       </TextSection>
     </HomeLayout>
   )

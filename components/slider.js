@@ -31,7 +31,7 @@ function PrevArrow(props) {
   );
 }
 
-export default function({slides}) {
+export default function Slider_({slides}) {
   var settings = {
     infinite: true,
     autoplay: true,
