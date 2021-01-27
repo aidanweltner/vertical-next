@@ -8,7 +8,7 @@ export default function ImageHeader({ image, title, description, details }){
           ''
         }
         {details ?
-          <ul className="details-list mt-4 text-gray-200 flex space-x-2 divide-x-2 divide-red-200 font-light">
+          <ul className="details-list mt-4 text-gray-200 flex flex-col md:flex-row md:space-x-2 md:divide-x-2 md:divide-red-200 font-light">
             {details.map((detail)=>(
               <li>{detail}</li>
             ))}

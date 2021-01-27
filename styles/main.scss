@@ -11,7 +11,7 @@ body {
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
-  @apply bg-gray-900 text-gray-300;
+  @apply bg-gray-900 text-gray-300 w-screen overflow-x-hidden;
 }
 
 a {
@@ -48,23 +48,14 @@ a {
   content: none;
 }
 
-@media (min-width:700px) {
-  .slick-next {
-    margin-right: -0.5rem;
-  }
-
-  .slick-prev {
-    margin-left: -0.5rem; 
-  }
-}
-
 /* Global styles */
+
 .details-list {
   li {
-    @apply pl-2;
+    @apply pt-2;
 
     &:first-child {
-      @apply pl-0;
+      @apply pt-0;
     }
   }
 }
@@ -166,5 +157,25 @@ img {
 
   &:nth-child(3) {
     transform: rotate(-45deg);
+  }
+}
+
+@media (min-width:700px) {
+  .slick-next {
+    margin-right: -0.5rem;
+  }
+
+  .slick-prev {
+    margin-left: -0.5rem; 
+  }
+
+  .details-list {
+    li {
+      @apply pl-2 pt-0;
+  
+      &:first-child {
+        @apply pl-0;
+      }
+    }
   }
 }
