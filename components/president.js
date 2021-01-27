@@ -13,23 +13,12 @@ export default function President({ title, subTitle, subTitle2, image, quote, so
           </div>
         </div>
         <div className="mb-8">
-          <p className="text-xl lg:text-2xl font-bold mb-2 text-gray-200">"{quote}"</p>
-          <p className="text-lg lg:text-xl font-bold text-gray-300">{source}</p>
+          <p className="text-xl lg:text-2xl font-light mt-6 mb-2 text-gray-200">"{quote}"</p>
+          <p className="text-lg lg:text-xl font-bold my-0 text-gray-100">{source}</p>
           <p className="text-md lg:text-lg font-light text-gray-400">{sourcePosition}</p>
         </div>
         <div className="prose mb-8">
           {children}
-        </div>
-        <div>
-          <h3 className="text-xl lg:text-2xl font-bold mb-4 text-gray-200">{favoritesTitle}</h3>
-          <div className="grid md:grid-cols-2 gap-6">
-            {favorites.map((favorite)=>(
-              <div>
-                <img src={favorite.image}/>
-                <p className="mt-2 leading-relaxed">"{favorite.quote}"</p>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </section>
