@@ -1,5 +1,6 @@
 import Project from '../../components/project'
 import Testimonial from '../../components/testimonial'
+import Slider from '../../components/slider'
 
 export const meta = {
   title: 'Bardenay',
@@ -12,10 +13,19 @@ export const meta = {
   isFeatured: true,
 }
 
+export const slides = [
+  {
+    src: "/images/projects/bardenay/Bardenay-Eagle.1.jpg",
+    alt: "Bardenay Eagle"
+  },
+  {
+    src: "/images/projects/bardenay/Bardenay-Eagle-2.jpg",
+    alt: "Bardenay Eagle Exterior"
+  }
+]
+
 export default ({children}) => <Project meta={meta}>{children}</Project>
 
 VERTICAL completed the tenant improvement to the original Bardenay, the nation’s first liquor distillery, in downtown Boise as well as the ground-up construction of the Eagle and Coeur d’ Alene, Idaho, Bardenay. The million-dollar restaurants feature a distillery, custom bar, fireplace and outdoor dining.
 
-![Bardenay Eagle, ID 1](/images/projects/bardenay/Bardenay-Eagle.1.jpg)
-
-![Bardenay Eagle, ID 2](/images/projects/bardenay/Bardenay-Eagle-2.jpg)
+<Slider slides={slides} />

@@ -88,6 +88,9 @@ module.exports = {
       },
       screens: {
         '3xl': '2100px',
+      },
+      spacing: {
+        '80screen': '80vh',
       }
     },
   },
