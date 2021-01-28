@@ -6,7 +6,7 @@ export default function HomeSection({ href, title, top, children, bg }) {
     <>
       <section className="w-screen block relative h-screen xl:h-85 -mb-1 bg-cover">
         <div className="absolute inset-0 section-inner z-10 h-full flex flex-col content-between">
-          <h1 className="text-xs lg:text-normal text-white text-center md:text-left">{top}</h1>
+          <h1 className="lg:text-lg text-white text-center md:text-left">{top}</h1>
           <div className="my-auto space-y-3">
             <TextLoop noWrap={false} >
               {children}
