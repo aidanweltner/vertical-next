@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 export default function ProjectTile({ project }) {
   const {
@@ -19,14 +18,7 @@ export default function ProjectTile({ project }) {
             <p className="text-sm font-semibold">{meta.details[0]}</p>
           </header>
     
-          {/* <img id="filter-img" className="absolute inset-0 h-48 w-full object-cover object-center red-filter" style={{transition: '1s filter ease-in'}} src={meta.image} /> */}
-          <Image
-            src={meta.image}
-            /* id="filter-img" */
-            layout='fill'
-            className="object-cover object-center red-filter"
-            alt={meta.title}
-          />
+          <img id="filter-img" className="absolute inset-0 h-48 w-full object-cover object-center red-filter" style={{transition: '1s filter ease-in'}} alt={meta.title} src={meta.image} />
         </article>
       </a>
     </Link>
