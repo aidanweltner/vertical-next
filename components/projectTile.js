@@ -18,7 +18,13 @@ export default function ProjectTile({ project }) {
             <p className="text-sm font-semibold">{meta.details[0]}</p>
           </header>
     
-          <img id="filter-img" className="absolute inset-0 h-48 w-full object-cover object-center red-filter" style={{transition: '1s filter ease-in'}} alt={meta.title} src={meta.image} />
+          <img
+            id="filter-img"
+            className="absolute inset-0 h-48 w-full object-cover object-center red-filter"
+            style={{transition: '1s filter ease-in'}}
+            alt={meta.title}
+            src={meta.image + (meta.isFeatured ? '?nf_resize=smartcrop&w=436&h=218' : '?nf_resize=smartcrop&w=212&h=218') }
+          />
         </article>
       </a>
     </Link>

@@ -49,7 +49,11 @@ export default function Slider_({slides}) {
       <Slider {...settings}>
         {slides.map((slide)=>(
           <div className={`relative ${largeSlider ? 'h-80screen' : 'h-96'} border-2 border-gray-900`}>
-            <img className={`${largeSlider ? 'object-contain h-80screen' : 'object-cover h-96'} w-full`} src={slide.src} alt={slide.alt}/>
+            <img
+              className={`${largeSlider ? 'object-contain h-80screen' : 'object-cover h-96'} w-full`}
+              src={`${slide.src}?nf_resize=fit&w=657`}
+              alt={slide.alt}
+            />
           </div>
         ))}
       </Slider>
