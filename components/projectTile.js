@@ -8,7 +8,7 @@ export default function ProjectTile({ project }) {
 
   return (
     <Link href={"/project" + link}>
-      <a className={`h-48 no-underline tile ${meta.isFeatured ? 'md:col-span-2' : ''}`}>
+      <a title={`Project: ${meta.title}`} className={`h-48 no-underline tile ${meta.isFeatured ? 'md:col-span-2' : ''}`}>
         <article className="relative">
           <header className="relative z-10 h-48 flex flex-col justify-between p-3 text-white">
             <div>

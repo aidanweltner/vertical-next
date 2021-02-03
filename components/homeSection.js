@@ -22,7 +22,7 @@ export default function HomeSection({ href, title, top, children, bg }) {
           </Link>
         </div>
 
-        <img id="filter-img" className="aboslute inset-0 h-full w-full object-cover object-center red-filter" style={{transition: '1s filter ease-in'}} src={`/images/${bg}`} />
+        <img alt={top} width="100%" height="auto" id="filter-img" className="aboslute inset-0 h-full w-full object-cover object-center red-filter" style={{transition: '1s filter ease-in'}} src={`/images/${bg}`} />
 
       </section>
     </>

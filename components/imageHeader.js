@@ -17,7 +17,7 @@ export default function ImageHeader({ image, title, description, details }){
         }
       </div>
 
-      <img id="filter-img" className="absolute inset-0 h-full w-full object-cover object-center red-filter" style={{transition: '1s filter ease-in'}} src={image} />
+      <img width="100vw" height="auto" id="filter-img" className="absolute inset-0 h-full w-full object-cover object-center red-filter" style={{transition: '1s filter ease-in'}} src={image} />
     </header>
   )
 }

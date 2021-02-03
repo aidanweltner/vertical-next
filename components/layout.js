@@ -3,24 +3,17 @@ import Link from 'next/link'
 import Header from './header'
 import Footer from './footer'
 
-export const siteTitle = 'Vertical Construction'
+export const siteTitle = 'Vertical Construction | Boise, ID'
+export const siteDescription = "VERTICAL Corporation is a small general contracting company based in Boise, Idaho. We offer clients a high level of personal attention and customer service."
+export const siteImage = './VerticalDefaultSocialImage.jpg'
 
 export default function Layout({ children, home }) {
   return (
     <>
       <Head>
         <link rel="icon" href="/Favicon.ico" />
-        <meta
-          name="description"
-          content="Learn how to build a personal website using Next.js"
-        />
-        <meta
-          property="og:image"
-          content={`https://og-image.now.sh/${encodeURI(
-            siteTitle
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-        />
-        <meta name="og:title" content={siteTitle} />
+        <meta property="og:site_name" content={siteTitle} />
+        <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       

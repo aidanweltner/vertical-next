@@ -2,7 +2,7 @@ import HomeHeader from "@components/homeHeader";
 import Head from "next/head";
 import HomeLayout from "../components/homeLayout";
 import HomeSection from "../components/homeSection";
-import { siteTitle } from "../components/layout";
+import { siteTitle, siteDescription, siteImage } from "../components/layout";
 import TextSection from "../components/textSection";
 
 export default function Home() {
@@ -10,6 +10,12 @@ export default function Home() {
     <HomeLayout>
       <Head>
         <title>{ siteTitle }</title>
+        <meta
+          name="description"
+          content={siteDescription}
+        />
+        <meta property="og:title" content={siteTitle} key="ogtitle" />
+        <meta property="og:description" content={siteDescription} key="ogdesc" />
       </Head>
       <HomeSection
         title="Portfolio"

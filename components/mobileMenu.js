@@ -10,8 +10,8 @@ export default function MobileMenu({dark}) {
   return (
     <div className="block lg:hidden">
       <div className="flex items-center" >
-        <button onClick={() => toggle(!isOpen)}>
-          <div className={ isOpen ? `burger__open` : `burger` } >
+        <button aria-label="Toggle the menu" onClick={() => toggle(!isOpen)}>
+          <div aria-hidden="true" className={ isOpen ? `burger__open` : `burger` } >
             <span/>
             <span/>
             <span/>
@@ -19,7 +19,7 @@ export default function MobileMenu({dark}) {
           <span className="sr-only">Menu</span>
         </button>
         <Link href="/">
-          <a className="border-none">
+          <a className="border-none" title="Vertical Construction | Home">
             <LogoHoriz className={`h-10 lg:hidden ml-4 ${dark ? 'text-white' : 'text-primary'}`}/>
           </a>
         </Link>

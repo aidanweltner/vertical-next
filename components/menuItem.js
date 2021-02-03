@@ -5,7 +5,9 @@ export default function MenuItem({ dark, title, href }) {
     <li>
       <Link href={href}>
         <a 
-        className={`inline-block pr-4 py-2 border-none hover:underline ${dark ? 'text-white' : 'text-primary'}`}>
+          className={`inline-block pr-4 py-2 border-none hover:underline ${dark ? 'text-white' : 'text-primary'}`}
+          title={title}
+        >
           {title}
         </a>
       </Link>
