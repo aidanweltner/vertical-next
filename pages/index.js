@@ -2,21 +2,30 @@ import HomeHeader from "@components/homeHeader";
 import Head from "next/head";
 import HomeLayout from "../components/homeLayout";
 import HomeSection from "../components/homeSection";
-import { siteTitle, siteDescription, siteImage } from "../components/layout";
+import { siteTitle, siteDescription, siteImage, siteUrl } from "../components/layout";
+import { NextSeo } from 'next-seo';
 import TextSection from "../components/textSection";
 
 export default function Home() {
   return (
     <HomeLayout>
-      <Head>
-        <title>{ siteTitle }</title>
-        <meta
-          name="description"
-          content={siteDescription}
-        />
-        <meta property="og:title" content={siteTitle} key="ogtitle" />
-        <meta property="og:description" content={siteDescription} key="ogdesc" />
-      </Head>
+      <NextSeo
+        title={siteTitle}
+        description={siteDescription}
+        openGraph={{
+          url: `${siteUrl}`,
+          title: `${siteTitle}`,
+          description: `${siteDescription}`,
+          images: [
+            {
+              url:`${siteUrl + siteImage}`,
+              width:1600,
+              height:900,
+              alt: `${siteTitle}`,
+            }
+          ]
+        }}
+      />
       <HomeSection
         title="Portfolio"
         href="/portfolio"

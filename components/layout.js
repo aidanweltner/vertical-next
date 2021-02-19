@@ -5,7 +5,8 @@ import Footer from './footer'
 
 export const siteTitle = 'Vertical Construction | Boise, ID'
 export const siteDescription = "VERTICAL Corporation is a small general contracting company based in Boise, Idaho. We offer clients a high level of personal attention and customer service."
-export const siteImage = './VerticalDefaultSocialImage.jpg'
+export const siteImage = '/VerticalDefaultSocialImage.jpg'
+export const siteUrl = 'https://vertical-corp.com'
 
 export default function Layout({ children, home }) {
   return (
