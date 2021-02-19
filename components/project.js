@@ -12,14 +12,12 @@ export default function Project({meta, children}) {
         title={meta.title}
         description={meta.description}
         openGraph={{
-          url: `${siteUrl}`,
+          url: `${siteUrl + '/project/' + meta.slug}`,
           title: `${meta.title}`,
           description: `${meta.description}`,
           images: [
             {
               url:`${siteUrl + meta.image}`,
-              width:1600,
-              height:900,
               alt: `${meta.title}`,
             }
           ]
