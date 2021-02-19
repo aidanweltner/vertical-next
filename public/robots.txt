@@ -1,4 +1,6 @@
 Sitemap: https://vertical-corp.com/sitemap.xml
+Sitemap: https://vertical-corp.com/page-sitemap.xml
+Sitemap: https://vertical-corp.com/project-sitemap.xml
 
 User-agent: *
 Allow: /*
