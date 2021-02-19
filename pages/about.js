@@ -1,6 +1,7 @@
-import Head from "next/head";
+import { NextSeo } from "next-seo";
 import ImageHeader from "../components/imageHeader";
 import Layout from "../components/layout";
+import { siteTitle, siteImage, siteUrl } from "@components/layout";
 import President from "../components/president";
 import Team from "../components/team";
 import TextSection from "../components/textSection";
@@ -23,9 +24,23 @@ const team = [
 export default function About() {
   return (
     <Layout>
-      <Head>
-        <title>About</title>
-      </Head>
+      <NextSeo
+        title="About | Vertical Construction"
+        description="VERTICAL Construction is a general contractor in Boise, Idaho. With over 30 years of construction experience, we offer a high level of personal service."
+        openGraph={{
+          url: `${siteUrl + '/about/'}`,
+          title: "About | Vertical Construction",
+          description: "VERTICAL Construction is a general contractor in Boise, Idaho. With over 30 years of construction experience, we offer a high level of personal service.",
+          images: [
+            {
+              url:`${siteUrl + siteImage}`,
+              width:1600,
+              height:900,
+              alt: `${siteTitle}`,
+            }
+          ]
+        }}
+      />
       <ImageHeader
         image="/images/Eberlestock-Vertical-Construction.jpg"
         title="About"

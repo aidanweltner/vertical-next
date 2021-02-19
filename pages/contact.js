@@ -1,14 +1,29 @@
 import ContactForm from "../components/contactForm";
-import Head from "next/head";
 import Layout from "../components/layout";
+import { siteTitle, siteImage, siteUrl } from "@components/layout";
 import TextSection from "../components/textSection";
+import { NextSeo } from "next-seo";
 
 export default function Contact() {
   return (
     <Layout>
-      <Head>
-        <title>Contact Us</title>
-      </Head>
+      <NextSeo
+        title="Contact | Vertical Construction"
+        description="Contact VERTICAL Construction, a general contractor in Boise, Idaho."
+        openGraph={{
+          url: `${siteUrl + '/contact/'}`,
+          title: "Contact | Vertical Construction",
+          description: "Contact VERTICAL Construction, a general contractor in Boise, Idaho.",
+          images: [
+            {
+              url:`${siteUrl + siteImage}`,
+              width:1600,
+              height:900,
+              alt: `${siteTitle}`,
+            }
+          ]
+        }}
+      />
       <TextSection>
         <h1>Contact</h1>
         <p>Let’s build something together!</p>

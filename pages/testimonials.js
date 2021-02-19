@@ -1,14 +1,29 @@
-import Head from "next/head";
+import { NextSeo } from "next-seo";
 import Layout from "../components/layout";
+import { siteTitle, siteImage, siteUrl } from "@components/layout";
 import Testimonial from "../components/testimonial";
 import TextSection from "../components/textSection";
 
 export default function Testimonials() {
   return (
     <Layout>
-      <Head>
-        <title>Testimonials</title>
-      </Head>
+      <NextSeo
+        title="Testimonials | Vertical Construction"
+        description="Testimonals of praise for Vertical Construction. A general contractor in Boise, Idaho."
+        openGraph={{
+          url: `${siteUrl + '/testimonials/'}`,
+          title: "Testimonials | Vertical Construction",
+          description: "Testimonals of praise for Vertical Construction. A general contractor in Boise, Idaho.",
+          images: [
+            {
+              url:`${siteUrl + siteImage}`,
+              width:1600,
+              height:900,
+              alt: `${siteTitle}`,
+            }
+          ]
+        }}
+      />
       <TextSection>
         <h1>Testimonials</h1>
         <Testimonial

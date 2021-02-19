@@ -1,15 +1,30 @@
 import Layout from "@components/layout";
+import { siteTitle, siteImage, siteUrl } from "@components/layout";
 import TextSection from "@components/textSection";
-import Head from "next/head";
 import { projects } from "lib/getAllProjects";
 import ProjectTile from "@components/projectTile";
+import { NextSeo } from "next-seo";
 
 export default function Portfolio() {
   return (
     <Layout>
-      <Head>
-        <title>Portfolio</title>
-      </Head>
+      <NextSeo
+        title="Portfolio | Vertical Construction"
+        description="The portfolio of projects completed by Vertical Construction in Idaho."
+        openGraph={{
+          url: `${siteUrl + '/portfolio/'}`,
+          title: "Portfolio | Vertical Construction",
+          description: "The portfolio of projects completed by Vertical Construction in Idaho.",
+          images: [
+            {
+              url:`${siteUrl + siteImage}`,
+              width:1600,
+              height:900,
+              alt: `${siteTitle}`,
+            }
+          ]
+        }}
+      />
       <section>
         <div className="section-inner pb-12 grid md:grid-cols-3 3xl:grid-cols-5 grid-flow-row-dense gap-3">
           {projects.map((project)=> (
