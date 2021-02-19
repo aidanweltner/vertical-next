@@ -1,15 +1,30 @@
-import Head from "next/head";
 import ImageHeader from "./imageHeader";
 import Layout from "./layout";
+import { siteUrl } from "./layout";
+import { NextSeo } from 'next-seo';
 import TextSection from "./textSection";
 
 export default function Project({meta, children}) {
 
   return (
     <Layout>
-      <Head>
-        <title>{meta.title}</title>
-      </Head>
+      <NextSeo
+        title={meta.title}
+        description={meta.description}
+        openGraph={{
+          url: `${siteUrl}`,
+          title: `${meta.title}`,
+          description: `${meta.description}`,
+          images: [
+            {
+              url:`${siteUrl + meta.image}`,
+              width:1600,
+              height:900,
+              alt: `${meta.title}`,
+            }
+          ]
+        }}
+      />
       <ImageHeader
         image={meta.image}
         title={meta.title}

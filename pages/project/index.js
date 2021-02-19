@@ -1,5 +1,4 @@
 import Layout from "@components/layout";
-import TextSection from "@components/textSection";
 import Head from "next/head";
 import { projects } from "lib/getAllProjects";
 import ProjectTile from "@components/projectTile";
