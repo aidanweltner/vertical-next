@@ -1,5 +1,4 @@
 import HomeHeader from "@components/homeHeader";
-import Head from "next/head";
 import HomeLayout from "../components/homeLayout";
 import HomeSection from "../components/homeSection";
 import { siteTitle, siteDescription, siteImage, siteUrl } from "../components/layout";

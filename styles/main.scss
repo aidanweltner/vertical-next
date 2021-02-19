@@ -1,3 +1,59 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: '/fonts/Lato/Lato-Regular.ttf';
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: '/fonts/Lato/Lato-Italic.ttf';
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  src: '/fonts/Lato/Lato-Bold.ttf';
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 600;
+  src: '/fonts/Lato/Lato-BoldItalic.ttf';
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 800;
+  src: '/fonts/Lato/Lato-Black.ttf';
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 800;
+  src: '/fonts/Lato/Lato-BlackItalic.ttf';
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: '/fonts/Lato/Lato-Light.ttf';
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: '/fonts/Lato/Lato-LightItalic.ttf';
+}
+
 * {
   box-sizing: border-box;
 }

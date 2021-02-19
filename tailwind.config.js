@@ -93,6 +93,9 @@ module.exports = {
         '80screen': '80vh',
       }
     },
+    fontFamily: {
+      sans: "'Lato', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+    },
   },
   variants: {
     extend: {
