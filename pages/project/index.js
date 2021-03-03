@@ -23,6 +23,9 @@ export default function Projects() {
             }
           ]
         }}
+        twitter={{
+          cardType: 'summary_large_image',
+        }}
       />
       <section>
         <div className="section-inner pb-12 max-w-screen-sm xl:max-w-screen-md grid md:grid-cols-3 grid-flow-row-dense gap-3">

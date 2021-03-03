@@ -13,9 +13,9 @@ export default function Layout({ children, home }) {
     <>
       <Head>
         <link rel="icon" href="/Favicon.ico" />
+        <meta property="author" content="Todd Weltner"/>
         <meta property="og:site_name" content={siteTitle} />
         <meta property="og:locale" content="en_US" />
-        <meta name="twitter:card" content="summary_large_image" />
       </Head>
       
       <main>

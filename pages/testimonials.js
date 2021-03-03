@@ -23,6 +23,9 @@ export default function Testimonials() {
             }
           ]
         }}
+        twitter={{
+          cardType: 'summary_large_image',
+        }}
       />
       <TextSection>
         <h1>Testimonials</h1>

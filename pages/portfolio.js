@@ -24,6 +24,9 @@ export default function Portfolio() {
             }
           ]
         }}
+        twitter={{
+          cardType: 'summary_large_image',
+        }}
       />
       <section>
         <div className="section-inner pb-12 grid md:grid-cols-3 3xl:grid-cols-5 grid-flow-row-dense gap-3">

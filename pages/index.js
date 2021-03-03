@@ -24,6 +24,9 @@ export default function Home() {
             }
           ]
         }}
+        twitter={{
+          cardType: 'summary_large_image',
+        }}
       />
       <HomeSection
         title="Portfolio"

@@ -22,6 +22,9 @@ export default function Project({meta, children}) {
             }
           ]
         }}
+        twitter={{
+          cardType: 'summary_large_image',
+        }}
       />
       <ImageHeader
         image={meta.image}
