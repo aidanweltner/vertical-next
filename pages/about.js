@@ -88,8 +88,8 @@ export default function About() {
         title="About"
       />
       <TextSection className="pb-12">
-        <h4>When you hire VERTICAL</h4>
-        <h5>You’re getting more than 30 years in construction</h5>
+        <h4 className="text-3xl lg:text-4xl font-bold">When you hire VERTICAL</h4>
+        <h5>You’re getting more than 30 years of experience.</h5>
         <p>VERTICAL Corporation is a general contracting company based in Boise, Idaho. VERTICAL offers clients a high level of personal attention and customer service. Our mission is to provide the most professional construction services in the region. Because our business is built upon relationships, we are driven to make your building and your building experience a complete success.</p>
         <p>With every general contracting project we aspire to achieve these four important goals:</p>
         <ul>
