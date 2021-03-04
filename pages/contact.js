@@ -33,6 +33,7 @@ export default function Contact() {
           <ContactForm />
         </div>
       </section>
+      <div className="h-24 sm:h-32"></div>
     </Layout>
   )
 }

@@ -12,6 +12,7 @@ export default function Portfolio() {
         title="Portfolio | Vertical Construction"
         description="The portfolio of projects completed by Vertical Construction in Idaho."
         openGraph={{
+          type: 'website',
           url: `${siteUrl + '/portfolio/'}`,
           title: "Portfolio | Vertical Construction",
           description: "The portfolio of projects completed by Vertical Construction in Idaho.",
@@ -41,6 +42,7 @@ export default function Portfolio() {
         <p>With VERTICAL as your building partner, the challenge of balancing cost, quality and time is considered and calculated long before the dirt and nails fly.</p>
         <p>We are honored to have played a part in building the dreams of business and home owners throughout the region.</p>
       </TextSection>
+      <div className="h-24 sm:h-32"></div>
     </Layout>
   )
 }

@@ -1,4 +1,4 @@
-import { NextSeo } from "next-seo";
+import { NextSeo, LocalBusinessJsonLd } from "next-seo";
 import ImageHeader from "../components/imageHeader";
 import Layout from "../components/layout";
 import { siteTitle, siteImage, siteUrl } from "@components/layout";
@@ -28,6 +28,7 @@ export default function About() {
         title="About | Vertical Construction"
         description="VERTICAL Construction is a general contractor in Boise, Idaho. With over 30 years of construction experience, we offer a high level of personal service."
         openGraph={{
+          type: 'website',
           url: `${siteUrl + '/about/'}`,
           title: "About | Vertical Construction",
           description: "VERTICAL Construction is a general contractor in Boise, Idaho. With over 30 years of construction experience, we offer a high level of personal service.",
@@ -43,6 +44,44 @@ export default function About() {
         twitter={{
           cardType: 'summary_large_image',
         }}
+      />
+      <LocalBusinessJsonLd
+        type='GeneralContractor'
+        id={`${siteUrl}`}
+        name="Vertical Construction"
+        description="VERTICAL Construction is a general contractor in Boise, Idaho. With over 30 years of construction experience, we offer a high level of personal service."
+        url={`${siteUrl}`}
+        telephone='+12083369860'
+        address={{
+          streetAddress: '300 East 35th St',
+          addressLocality: 'Boise',
+          addressRegion: 'ID',
+          postalCode: '83714',
+          addressCountry: 'US',
+        }}
+        openingHours={[
+          {
+            opens: '08:00',
+            closes: '17:00',
+            dayOfWeek: [
+              'Monday',
+              'Tuesday',
+              'Wednesday',
+              'Thursday',
+              'Friday',
+              'Saturday',
+            ],
+            validFrom: '2021-03-03',
+            validThrough: '2025-12-31',
+          },
+        ]}
+        geo={{
+          latitude: '43.6256588',
+          longitude: '-116.2392819',
+        }}
+        images={[
+          `${siteUrl + siteImage}`,
+        ]}
       />
       <ImageHeader
         image="/images/Eberlestock-Vertical-Construction.jpg"

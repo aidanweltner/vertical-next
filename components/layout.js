@@ -8,7 +8,7 @@ export const siteDescription = "VERTICAL Corporation is a small general contract
 export const siteImage = '/VerticalDefaultSocialImage.jpg'
 export const siteUrl = 'https://vertical-corp.com'
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, home, project }) {
   return (
     <>
       <Head>
@@ -21,13 +21,6 @@ export default function Layout({ children, home }) {
       <main>
         <Header dark/>
         {children}
-        {!home && (
-          <div className="section-inner font-bold">
-            <Link href="/">
-              <a className="text-white">← Back to home</a>
-            </Link>
-          </div>
-        )}
         <Footer dark></Footer>
       </main>
       

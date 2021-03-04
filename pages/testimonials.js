@@ -11,6 +11,7 @@ export default function Testimonials() {
         title="Testimonials | Vertical Construction"
         description="Testimonals of praise for Vertical Construction. A general contractor in Boise, Idaho."
         openGraph={{
+          type: 'website',
           url: `${siteUrl + '/testimonials/'}`,
           title: "Testimonials | Vertical Construction",
           description: "Testimonals of praise for Vertical Construction. A general contractor in Boise, Idaho.",

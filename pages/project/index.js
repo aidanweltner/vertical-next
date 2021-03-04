@@ -34,6 +34,7 @@ export default function Projects() {
           ))}
         </div>
       </section>
+      <div className="h-24 sm:h-32"></div>
     </Layout>
   )
 }
