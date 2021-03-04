@@ -7,19 +7,21 @@ export default function HomeLayout({ children }) {
   return (
     <>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
-          <meta
-            name="description"
-            content="VERTICAL Corporation is a small general contracting company based in Boise, Idaho. We offer clients a high level of personal attention and customer service."
-          />
-          {/* <meta
-            property="og:image"
-            content={`https://og-image.now.sh/${encodeURI(
-              siteTitle
-            )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-          /> */}
-          <meta name="og:title" content={siteTitle} />
-          {/* <meta name="twitter:card" content="summary_large_image" /> */}
+      <link rel="icon" href="/Favicon.ico" />
+        <meta property="author" content="Todd Weltner"/>
+        <meta property="og:site_name" content={siteTitle} />
+        <meta property="og:locale" content="en_US" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129292435-4"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'UA-129292435-4');
+            `,
+          }}
+        />
       </Head>
       <Header dark></Header>
       <main>{children}</main>
