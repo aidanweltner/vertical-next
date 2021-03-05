@@ -53,7 +53,6 @@ export default function Home() {
               'Wednesday',
               'Thursday',
               'Friday',
-              'Saturday',
             ],
             validFrom: '2021-03-03',
             validThrough: '2025-12-31',
