@@ -110,7 +110,7 @@ export default function About() {
       >
         <p>With trust and integrity as his guiding principles, Todd founded VERTICAL Construction in 2002 believing that great projects are built on strong relationships.</p>
         <p>Todd is a veteran of the construction industry.   After graduating from Oregon State University’s construction engineering program, he was recruited by a large contractor in California where he gained invaluable experience on large scale, multi-million dollar projects. Todd moved to Boise in 1989 and worked for smaller firms specializing in custom homes and commercial projects in the Pacific Northwest.</p>
-        <p>He is a married father of two kids and a dog named Mayla. He’s an avid mountain biker, camper and hiker and supporter of worthy community organizations such as the <a href="http://www.youthranch.org/" target="_blank">Idaho Youth Ranch.</a></p>
+        <p>He is a married father of two kids and a chocolate lab. He’s an avid mountain biker, camper and hiker and supporter of worthy community organizations such as the <a href="http://www.youthranch.org/" target="_blank">Idaho Youth Ranch.</a></p>
         {/* <h3>Todd's reccomended formula for a sucessful project:</h3>
         <ol>
           <li>
