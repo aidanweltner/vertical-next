@@ -76,7 +76,7 @@ export default function Project({meta, children}) {
       <TextSection>
         {children}
       </TextSection>
-      <div className="section-inner font-bold">
+      <div className="section-inner pt-0 font-bold">
         <Link href="/portfolio">
           <a className="text-white">← Back to portfolio</a>
         </Link>
