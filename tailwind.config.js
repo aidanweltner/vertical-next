@@ -91,6 +91,8 @@ module.exports = {
       },
       spacing: {
         '80screen': '80vh',
+        '50screen': '50vh',
+        '40screen': '40vh',
       }
     },
     fontFamily: {
