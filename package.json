@@ -16,6 +16,7 @@
     "autoprefixer": "^10.0.4",
     "date-fns": "^2.16.1",
     "jquery": "^3.6.0",
+    "lodash": "^4.17.21",
     "netlify-plugin-cache-nextjs": "^1.5.2",
     "next": "10.0.3",
     "next-seo": "^4.19.0",
