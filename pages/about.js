@@ -14,6 +14,12 @@ const team = [
     subTitle: 'a sucker for a craft brew'
   },
   {
+    image: '/images/BrianLemmon.jpg',
+    name: 'Brian Lemmon',
+    title: 'Project Executive',
+    subTitle: 'actually scared of skid steers',
+  },
+  {
     image: '/images/Jennie.jpg',
     name: 'Jennie',
     title: 'Maintains our image',
