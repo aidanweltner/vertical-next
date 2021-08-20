@@ -17,7 +17,7 @@ const team = [
     image: '/images/BrianLemmon.jpg',
     name: 'Brian Lemmon',
     title: 'Project Executive',
-    subTitle: 'actually scared of skid steers',
+    subTitle: 'also boards, boats, and bikes',
   },
   {
     image: '/images/Jennie.jpg',
