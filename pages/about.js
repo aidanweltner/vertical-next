@@ -8,22 +8,28 @@ import TextSection from "../components/textSection";
 
 const team = [
   {
-    image: 'images/BraydenSielaff.jpg',
-    name: 'Brayden Sielaff',
-    title: 'Superintendent & Project Manager',
-    subTitle: 'a sucker for a craft brew'
-  },
-  {
     image: '/images/BrianLemmon.jpg',
     name: 'Brian Lemmon',
     title: 'Project Executive',
-    subTitle: 'also boards, boats, and bikes',
+    subTitle: 'Off the jobsite he spends time with family, boards, boats, and bikes.',
+  },
+  {
+    image: '/images/RyanShaul.jpg',
+    name: 'Ryan Shaul',
+    title: 'Assistant Superintendent',
+    subTitle: 'The youngest of the crew but also the toughest.  Just call him Captain Shaul, USMC.'
+  },
+  {
+    image: '/images/LarryVaughn.jpg',
+    name: 'Larry Vaugn',
+    title: 'Superintendent',
+    subTitle: 'Recent Oregon transplant. Loves to hunt.'
   },
   {
     image: '/images/Jennie.jpg',
     name: 'Jennie',
     title: 'Maintains our image',
-    subTitle: 'also the presidents wife'
+    subTitle: 'Also the presidents wife.'
   },
 ]
 
