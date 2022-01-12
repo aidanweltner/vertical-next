@@ -93,7 +93,7 @@ export default function Home() {
       <TextSection>
         <p>Since 2002, VERTICAL has completed hundreds of projects in Idaho and beyond. Our portfolio features projects that range from simple tenant improvements to complex remodels and  ground-up construction.  We are particularly proud of the projects we have constructed for repeat clients.  These relationships are forged through mutual respect and trust and are a testament to the value we offer our building partners.  With VERTICAL as your building partner, the challenge of balancing cost, quality and time is considered and calculated long before the dirt and nails fly.</p>
         <p>We are honored to have played a part in building the dreams of business and homeowners throughout the region.</p>
-        <h2>Waterhouse row</h2>
+        <h2>Waterhouse Row</h2>
         <p><strong>What’s New?</strong></p>
         <p>Construction has begun on Phase II of Waterhouse Row, a multi-family development near the Boise River and Greenbelt.  This 16 unit mixed-use project includes townhomes to own, apartments to rent and commercial spaces to lease. VERTICAL completed construction of Phase I of Waterhouse Row in 2020. The development is nestled in the heart of an up-and- coming area of Garden City, ID.  Thanks to the vision of local developers, the area is poised to become an even larger hub for an active, river-loving community.</p>
         <a

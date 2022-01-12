@@ -29,7 +29,7 @@ const team = [
     image: '/images/Jennie.jpg',
     name: 'Jennie',
     title: 'Maintains our image',
-    subTitle: 'Also the presidents wife.'
+    subTitle: 'Also the president\'s wife.'
   },
 ]
 
