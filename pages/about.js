@@ -8,16 +8,10 @@ import TextSection from "../components/textSection";
 
 const team = [
   {
-    image: '/images/GarrettKing.jpg',
-    name: 'Garrett King',
+    image: '/images/TimAustin.jpg',
+    name: 'Tim Austin',
     title: 'Project Executive',
-    subTitle: 'Hailing from the other Idaho. A woodworker, builder, aspiring outdoorsman.'
-  },
-  {
-    image: '/images/BrianLemmon.jpg',
-    name: 'Brian Lemmon',
-    title: 'Project Executive',
-    subTitle: 'Off the jobsite he spends time with family, boards, boats, and bikes.',
+    subTitle: 'Major BSU fan. Loves all that Idaho has to offer.'
   },
   {
     image: '/images/LarryVaughn.jpg',

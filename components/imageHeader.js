@@ -1,7 +1,7 @@
 export default function ImageHeader({ image, title, description, details }){
   return (
     <header className="w-screen block relative h-screen lg:h-50screen xl:h-85 -mb-1 bg-cover">
-      <div className="absolute inset-0 section-inner z-10 h-full flex flex-col justify-end">
+      <div id="header-content" className="absolute inset-0 section-inner z-10 h-full flex flex-col justify-end">
         <h1 className="text-5xl lg:text-6xl font-bold text-white">{title}</h1>
         {description ? 
           <p className="mt-4 text-gray-50 leading-relaxed text-lg lg:text-xl">{description}</p> :
