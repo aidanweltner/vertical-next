@@ -8,18 +8,6 @@ import TextSection from "../components/textSection";
 
 const team = [
   {
-    image: '/images/TimAustin.jpg',
-    name: 'Tim Austin',
-    title: 'Project Executive',
-    subTitle: 'Major BSU fan. Loves all that Idaho has to offer.'
-  },
-  {
-    image: '/images/LarryVaughn.jpg',
-    name: 'Larry Vaugn',
-    title: 'Superintendent',
-    subTitle: 'Recent Oregon transplant. Loves to hunt.'
-  },
-  {
     image: '/images/Jennie.jpg',
     name: 'Jennie',
     title: 'Maintains our image',
